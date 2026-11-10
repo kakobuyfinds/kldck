@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#452321">
+  <title>HipoBuy spreadsheet | Categorias, tamanhos e fotos QC</title>
+  <meta name="description" content="Explore 10 categorias no HipoBuy spreadsheet. Compare medidas, confira fotos QC e estime o custo do envio antes de escolher um produto.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HipoBuy spreadsheet | Categorias, tamanhos e fotos QC">
+  <meta property="og:description" content="Guia em português para encontrar categorias, conferir o anúncio original e comparar o custo total de uma encomenda.">
+  <meta property="og:image" content="https://www.nike.qa/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dw4efa3651/nk/fba/9/0/9/b/5/fba909b5_4406_4eef_bde0_ba558bb77956.jpg">
+  <meta property="og:image:alt" content="Nike Air Max 90 branco com detalhes pretos">
+  <link rel="preconnect" href="https://www.nike.qa">
+  <!-- Pesquisa editorial: a primeira página observada no Google mostrou oito
+       resultados web principais e um bloco de vídeos. Foram analisados oito
+       resultados web e dois vídeos, sem contar links auxiliares do mesmo resultado.
+       Reddit (r/RepNewFinds): organização em abas e atualização de links.
+       hipobuy.net: navegação por categorias e referências da comunidade.
+       Instagram (Hipobuy Spreadsheet): busca, valores de referência e fotos QC.
+       hipobuy.tech: categorias, guias e links de marketplaces.
+       hipobuy.life: descoberta de produtos e acesso ao anúncio.
+       hipobuysheets.net: categorias de moda, fotos QC e referências em USD.
+       hipobuyspread.com: busca em marketplaces e conversão de links.
+       hipobuyw2c.com: guias de compra, categorias e perguntas frequentes.
+       TikTok (oghipobuy): apresentação da lista de links em vídeo curto.
+       YouTube (Naikos10R): pesquisa de produtos e estimativa de envio.
+       Termos secundários: planilha HipoBuy, catálogo HipoBuy por categoria,
+       links de produtos HipoBuy, fotos QC HipoBuy, guia de compras HipoBuy. -->
+  <style>
+    :root{color-scheme:light;--paper:#fff8ed;--ink:#2e211d;--muted:#625148;--line:#dbc9ba;--wine:#452321;--rust:#8a3425;--peach:#f4dac6}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.62 system-ui,sans-serif}
+    h1,h2,h3,p,figure,dl,dd{margin:0}
+    h1,h2,h3{line-height:1.12;text-wrap:balance}
+    h1,h2{font-family:Georgia,serif;font-weight:700}
+    h1{font-size:clamp(2.75rem,6.6vw,6rem);letter-spacing:-.055em}
+    h2{font-size:clamp(1.85rem,3.2vw,3rem);letter-spacing:-.035em}
+    h3{font-size:1.17rem}
+    a{color:var(--rust);text-underline-offset:.2em}
+    :focus-visible{outline:3px solid currentColor;outline-offset:4px}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    .mast,.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.35rem 1rem;padding-block:.9rem}
+    .mast a,.foot a{font-weight:800}
+    .mast p,.foot p,.note{color:var(--muted);font-size:.9rem}
+    .directory{border-block:1px solid var(--line);background:#fffdf8;padding-block:.85rem}
+    .directory h2,.eyebrow{font:800 .76rem/1.4 system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+    .directory ol{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;margin:.6rem 0 0;padding:1px;background:var(--line)}
+    .directory a{display:flex;align-items:center;gap:.55rem;height:100%;min-height:2.8rem;padding:.48rem .65rem;background:#fffdf8;color:var(--ink);font-size:.9rem;font-weight:700;text-decoration:none}
+    .directory a:hover{background:var(--peach);text-decoration:underline}
+    .directory span{color:var(--rust);font-size:.75rem;font-variant-numeric:tabular-nums}
+    .hero{display:grid;grid-template-columns:1.15fr 1fr;margin-top:1.5rem;background:var(--wine);color:#fff8ed}
+    .hero-copy{display:grid;align-content:center;justify-items:start;gap:.95rem;padding:clamp(1.4rem,4vw,3.65rem)}
+    .hero-copy p:not(.eyebrow){max-width:42ch}
+    .hero-copy .eyebrow{color:#f8cbb0}
+    .button{display:inline-block;padding:.65rem 1rem;background:#f8cbb0;color:var(--wine);font-weight:800}
+    .button:hover{background:#fff0dd}
+    .hero figure{position:relative;display:grid;align-content:center;min-width:0;background:#f1eee9;color:var(--ink)}
+    .hero img{display:block;width:100%;height:auto;aspect-ratio:5/4;object-fit:contain}
+    figcaption{padding:.55rem .75rem;font-size:.84rem;font-weight:700}
+    .hero figcaption{background:#e6ddd5}
+    .section{margin-block:clamp(2.15rem,5vw,4.2rem)}
+    .section > h2{margin:.35rem 0 .9rem}
+    .topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.15rem}
+    .topics div{border-top:3px solid var(--rust);padding:.8rem .85rem;background:#fffdf8}
+    dt{font-weight:800}
+    dd{margin-top:.35rem;color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem;margin-top:1rem}
+    .gallery figure{background:#fffdf8;border:1px solid var(--line)}
+    .gallery img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#f5f1ec}
+    .articles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+    .articles article{border:1px solid var(--line);padding:clamp(1rem,2.4vw,1.65rem)}
+    .articles article:first-child{background:var(--peach)}
+    .articles h3{margin:.4rem 0 .65rem}
+    .articles p + p{margin-top:.65rem}
+    .faq{border-top:1px solid var(--line)}
+    details{border-bottom:1px solid var(--line);padding:.7rem 0}
+    summary{cursor:pointer;font-weight:800;padding:.3rem 0}
+    details p{max-width:72ch;margin:.25rem 0 .4rem}
+    footer{border-top:1px solid var(--line)}
+    @media(max-width:52rem){.directory ol{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:40rem){.directory ol,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.hero,.topics,.articles{grid-template-columns:1fr}.hero img{aspect-ratio:5/3}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"HipoBuy spreadsheet | Categorias, tamanhos e fotos QC",
+        "description":"Explore 10 categorias no HipoBuy spreadsheet. Compare medidas, confira fotos QC e estime o custo do envio antes de escolher um produto.",
+        "inLanguage":"pt"
+      },
+      {
+        "@type":"FAQPage",
+        "inLanguage":"pt",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"O que é um HipoBuy spreadsheet?",
+            "acceptedAnswer":{"@type":"Answer","text":"É um índice de links de produtos, geralmente organizado por categoria. Esta página reúne atalhos para dez categorias do HipobuyFind e orientações para comparar os anúncios."}
+          },
+          {
+            "@type":"Question",
+            "name":"Como conferir um link de produto HipoBuy?",
+            "acceptedAnswer":{"@type":"Answer","text":"Abra o anúncio de origem e confira o vendedor, a referência, a cor e o tamanho. Se a página mostrar um produto diferente ou estiver indisponível, volte a pesquisar pelo código do modelo."}
+          },
+          {
+            "@type":"Question",
+            "name":"Fotos QC comprovam a autenticidade?",
+            "acceptedAnswer":{"@type":"Answer","text":"Não. Fotos de controle de qualidade ajudam a conferir a variante, as medidas e os acabamentos visíveis. Para verificar a autenticidade, procure um canal autorizado ou um serviço de autenticação independente."}
+          },
+          {
+            "@type":"Question",
+            "name":"Como comparar o custo de envio para Portugal e Brasil?",
+            "acceptedAnswer":{"@type":"Answer","text":"Faça uma estimativa para o código postal em Portugal ou para o CEP no Brasil. Compare o total em EUR ou BRL, incluindo o frete, a conversão de moeda e os encargos aplicáveis ao destino."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/kldck/">
+</head>
+<body>
+  <header class="wrap mast">
+    <a href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+    <p>Guia editorial independente de moda e acessórios</p>
+  </header>
+  <main>
+    <nav class="directory" aria-labelledby="categorias">
+      <div class="wrap">
+        <h2 id="categorias">Categorias do catálogo</h2>
+        <ol>
+          <li><a href="https://hipobuyfind.com/category-911-Shoes.html"><span aria-hidden="true">01</span>Calçado</a></li>
+          <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html"><span aria-hidden="true">02</span>Moletons e malhas</a></li>
+          <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html"><span aria-hidden="true">03</span>Camisetas</a></li>
+          <li><a href="https://hipobuyfind.com/category-914-Jackets.html"><span aria-hidden="true">04</span>Jaquetas e casacos</a></li>
+          <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html"><span aria-hidden="true">05</span>Calças e shorts</a></li>
+          <li><a href="https://hipobuyfind.com/category-916-Headwear.html"><span aria-hidden="true">06</span>Bonés e chapéus</a></li>
+          <li><a href="https://hipobuyfind.com/category-917-Sets.html"><span aria-hidden="true">07</span>Conjuntos</a></li>
+          <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html"><span aria-hidden="true">08</span>Roupa interior</a></li>
+          <li><a href="https://hipobuyfind.com/category-919-Jersey.html"><span aria-hidden="true">09</span>Camisas esportivas</a></li>
+          <li><a href="https://hipobuyfind.com/category-920-Accessories.html"><span aria-hidden="true">10</span>Acessórios</a></li>
+        </ol>
+      </div>
+    </nav>
+    <div class="wrap">
+      <section class="hero" aria-labelledby="titulo">
+        <div class="hero-copy">
+          <p class="eyebrow">Caderno de compras · 10 categorias</p>
+          <h1 id="titulo">HipoBuy spreadsheet</h1>
+          <p>Use a planilha HipoBuy como ponto de partida para explorar calçado, roupa e acessórios. Abra a categoria, compare o anúncio original e anote o tamanho e a cor antes de decidir.</p>
+          <a class="button" href="https://www.hipobuyfind.com">Explorar o HipobuyFind</a>
+        </div>
+        <figure>
+          <img src="https://www.nike.qa/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dw4efa3651/nk/fba/9/0/9/b/5/fba909b5_4406_4eef_bde0_ba558bb77956.jpg" width="600" height="480" alt="Nike Air Max 90 branco com detalhes pretos" fetchpriority="high" loading="eager">
+          <figcaption>Nike Air Max 90 · Referência de calçado</figcaption>
+        </figure>
+      </section>
+      <section class="section" aria-labelledby="escolha">
+        <p class="eyebrow">Dossiê 01</p>
+        <h2 id="escolha">O que vale a pena comparar</h2>
+        <dl class="topics">
+          <div><dt>Calçado e numeração</dt><dd>Para comparar a numeração EU e BR, comece pelo comprimento do pé em centímetros. Confira a tabela de tamanhos do vendedor, a largura do calçado e, quando houver, a medida da palmilha.</dd></div>
+          <div><dt>Roupa e caimento</dt><dd>Compare a largura do peito, o comprimento da manga e a altura da peça com uma roupa sua. Para calças e shorts, use cintura, gancho e entrepernas. Em jaquetas, deixe espaço para uma camada por baixo.</dd></div>
+          <div><dt>Bonés, bolsas e joias</dt><dd>Verifique a circunferência do boné, as dimensões da bolsa e o tamanho interno da pulseira. Em fotos de acessórios, procure vistas do fecho, das ferragens e da parte interna.</dd></div>
+        </dl>
+      </section>
+      <section class="section" aria-labelledby="referencias">
+        <p class="eyebrow">Dossiê 02</p>
+        <h2 id="referencias">Referências visuais de moda</h2>
+        <p class="note">Imagens editoriais para observar silhuetas, acabamentos e materiais. A disponibilidade deve ser consultada no anúncio do vendedor.</p>
+        <div class="gallery">
+          <figure>
+            <img src="https://st-cdn.tsum.com/sig/f89ab88d43e2b64324833946a5e62ae4/width/763/i/83/55/1c/1e/83551c1e-7e25-3e13-afdf-44cddf0e0b9c.jpg" width="360" height="360" alt="Camiseta preta Gucci com estampa frontal" loading="lazy" decoding="async">
+            <figcaption>Gucci · Camiseta de algodão</figcaption>
+          </figure>
+          <figure>
+            <img src="https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-casquette-monogram-essential--M5381M_PM2_Front%20view.jpg" width="360" height="360" alt="Boné escuro Louis Vuitton Monogram Essential com aba curva" loading="lazy" decoding="async">
+            <figcaption>Louis Vuitton · Boné Monogram Essential</figcaption>
+          </figure>
+          <figure>
+            <img src="https://www.oliverjewellery.ca/cdn/shop/files/Hermes-Yellow-Gold-Plated-Black-Enamel-12-MM-Clic-H-Bracelet-w-Box_143b6a81_1200x1200.jpg?v=1743933155" width="360" height="360" alt="Pulseira Hermès Clic H com esmalte preto e fecho dourado em H" loading="lazy" decoding="async">
+            <figcaption>Hermès · Pulseira Clic H</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.laced.com/products/b1ffb8fd-846b-4578-a7b1-6b0228a99fbd.jpg?auto=format&amp;fit=max&amp;q=75&amp;w=3840" width="360" height="360" alt="Tênis Dior B27 branco de cano baixo visto de lado" loading="lazy" decoding="async">
+            <figcaption>Dior · Tênis B27</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="guias">
+        <p class="eyebrow">Dossiê 03</p>
+        <h2 id="guias">Guia de compras HipoBuy</h2>
+        <div class="articles">
+          <article>
+            <p class="eyebrow">Anúncio e inspeção</p>
+            <h3>Como usar os links de produtos HipoBuy</h3>
+            <p>Ao comparar anúncios no Weidian, no Taobao ou no 1688, guarde a referência do produto, o nome do vendedor e a variante exata. Se um link abrir uma peça parecida, volte a pesquisar pelo código do modelo e confirme a cor e o tamanho antes de avançar.</p>
+            <p>Quando houver fotos QC HipoBuy, veja se correspondem ao artigo e à variante que escolheu. Peça uma foto com fita métrica se a medida for decisiva. Para um tênis, compare os dois pés. Para uma peça estampada, confira a posição do desenho e as costuras em close.</p>
+          </article>
+          <article>
+            <p class="eyebrow">Preço final e envio</p>
+            <h3>Como estimar o custo total da encomenda</h3>
+            <p>Some o valor dos produtos, a entrega local, as taxas de serviço e o envio internacional. Compare as opções na mesma moeda e reserve uma linha para os encargos aplicáveis no destino. O preço de referência do catálogo pode mudar ao selecionar outra variante.</p>
+            <p>Peça o peso e as dimensões do pacote antes de comparar o frete internacional. Algumas transportadoras consideram o peso volumétrico. Uma caixa de calçado ou um casaco espesso pode alterar a estimativa, mesmo quando a diferença de peso é pequena.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="perguntas">
+        <p class="eyebrow">Consulta rápida</p>
+        <h2 id="perguntas">Perguntas frequentes</h2>
+        <div class="faq">
+          <details open>
+            <summary>O que é um HipoBuy spreadsheet?</summary>
+            <p>É um índice de links de produtos, geralmente organizado por categoria. Esta página reúne atalhos para dez categorias do HipobuyFind e orientações para comparar os anúncios.</p>
+          </details>
+          <details>
+            <summary>Como conferir um link de produto HipoBuy?</summary>
+            <p>Abra o anúncio de origem e confira o vendedor, a referência, a cor e o tamanho. Se a página mostrar um produto diferente ou estiver indisponível, volte a pesquisar pelo código do modelo.</p>
+          </details>
+          <details>
+            <summary>Fotos QC comprovam a autenticidade?</summary>
+            <p>Não. Fotos de controle de qualidade ajudam a conferir a variante, as medidas e os acabamentos visíveis. Para verificar a autenticidade, procure um canal autorizado ou um serviço de autenticação independente.</p>
+          </details>
+          <details>
+            <summary>Como comparar o custo de envio para Portugal e Brasil?</summary>
+            <p>Faça uma estimativa para o código postal em Portugal ou para o CEP no Brasil. Compare o total em EUR ou BRL, incluindo o frete, a conversão de moeda e os encargos aplicáveis ao destino.</p>
+          </details>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <a href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+      <p>Catálogo HipoBuy por categoria e guia de comparação em português.</p>
+    </div>
+  </footer>
+</body>
+</html>
